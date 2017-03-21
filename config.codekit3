@@ -2842,6 +2842,39 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
+	"\/source\/assets\/images\/opportunity.jpg": {
+		"ft": 16384,
+		"iS": 153084,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/opportunity.jpg",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/assets\/images\/resume.jpg": {
+		"ft": 16384,
+		"iS": 65705,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/resume.jpg",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/source\/assets\/images\/ssxd-bg.jpg": {
+		"ft": 16384,
+		"iS": 98896,
+		"oA": 0,
+		"oAP": "\/build\/assets\/images\/ssxd-bg.jpg",
+		"oF": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/assets\/images\/ssxd-logo-dark.png": {
 		"ft": 32768,
 		"iS": 1886,

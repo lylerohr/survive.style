@@ -6196,6 +6196,10 @@ button,
 .btn-ghost {
   background-color: transparent; }
 
+.btn-lg, .btn-group-lg > .btn {
+  padding: 1rem 2rem;
+  font-size: 2rem; }
+
 .input-group .btn,
 .input-group .form-control,
 .toolbar-actions .btn,
@@ -6274,20 +6278,30 @@ h2 {
   font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 48px;
   color: #aeaeae;
-  font-weight: 100; }
+  font-weight: 200; }
 
 h2 small {
   font-size: 20px;
   color: #dad7c2;
-  font-weight: 100; }
+  font-weight: 300; }
 
 h3 {
-  font-size: 28px;
-  color: #aeaeae; }
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 48px;
+  color: #aeaeae;
+  font-weight: 100; }
+
+h3 small {
+  font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
+  color: #dad7c2;
+  font-weight: 200; }
 
 h4 {
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 20px;
-  color: #737373; }
+  color: #dad7c2;
+  font-weight: 500; }
 
 h5 {
   font-size: 16px;
@@ -6296,6 +6310,10 @@ h5 {
 h6 {
   font-size: 14px;
   color: #737373; }
+
+p {
+  font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 100; }
 
 .jumbotron {
   padding-left: 2rem;
@@ -6315,13 +6333,15 @@ h6 {
 nav #logo {
   background-image: url(../images/ssxd-logo.png);
   background-size: cover;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  left: 1.6rem;
   z-index: 1000;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: inline-block;
-  margin-top: .5rem;
+  margin-top: .8rem;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -6398,6 +6418,7 @@ nav .bar.scrolled {
 nav .bar.scrolled #logo {
   height: 2rem;
   width: 2rem;
+  margin-top: .55rem;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -6417,7 +6438,7 @@ nav .nav-background {
   width: 100%;
   height: 100%;
   background: none;
-  display: table;
+  display: none;
   -moz-transition: all 0.15s;
   -o-transition: all 0.15s;
   -webkit-transition: all 0.15s;
@@ -6425,7 +6446,8 @@ nav .nav-background {
 
 nav.open .nav-background {
   background-color: rgba(205, 69, 61, 0.9) !important;
-  text-align: center; }
+  text-align: center;
+  display: table; }
 
 nav .nav-background ul {
   list-style: none;
@@ -6474,4 +6496,103 @@ body {
   background-color: #0e1218; }
 
 .masthead {
-  height: 30rem; }
+  height: 100vh;
+  background-image: url(../images/ssxd-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  position: relative; }
+
+.masthead-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; }
+
+.masthead .masthead-content h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 3.5rem; }
+
+.masthead .masthead-content h1 small {
+  margin-top: 2rem !important;
+  color: #aeaeae; }
+
+@media screen and (max-width: 768px) {
+  .masthead .masthead-content h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 2.1rem;
+    font-size: 2rem; }
+  .masthead .masthead-content h1 small {
+    margin-top: 2rem !important;
+    font-size: 1rem; } }
+
+.opportunity {
+  background-image: url(../images/opportunity.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.connect {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.connect h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 3rem; }
+
+.connect a {
+  margin-top: 5rem; }
+
+.resume {
+  height: 100vh;
+  background-image: url(../images/resume.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.resume h2 {
+  font-weight: 400;
+  margin-bottom: 2rem; }
+
+.resume a {
+  margin-top: 2rem;
+  margin-right: 1rem; }
+
+.specialties {
+  padding-top: 4rem;
+  height: 100vh; }
+
+.specialties h3 {
+  margin: 0; }
+
+.specialties-tiles {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.specialty-tile {
+  height: 14rem; }
+
+.portfolio {
+  height: 100vh;
+  margin-top: 4rem; }
+
+.portfolio-tile img {
+  width: 100%; }
+
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 2rem; }

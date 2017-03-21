@@ -94,6 +94,10 @@ button,
 	background-color: $btn-bg-ghost;
 }
 
+.btn-lg {
+	padding: $btn-padding-large;
+	font-size: $font-size-large;
+}
 
 //CUSTOM OVERRIDES
 // Fixes mismatched button group height

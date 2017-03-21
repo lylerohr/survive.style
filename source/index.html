@@ -14,30 +14,34 @@
 		<![endif]-->
 	</head>
 	<body id="body" onscroll="navBackground()">
-		<nav id="nav">
-			<div id="bar" class="bar">
-				<a id="logo" href="/"></a>
-				<a id="nav-toggle" onclick="showHideNav()" href="#"></a>
-			</div>
-			<div class="nav-background">
-				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Resume</a></li>
-				</ul>
-			</div>
-		</nav>
 		<div class="container-fluid">
 			<div class="row masthead">
-				<h1 class="text-center">Our experiences connect us.</h1>
-				<h1 class="text-center"><small>I’m Lyle, and I am an Experience Designer.</small></h1>
+				<nav id="nav">
+					<div id="bar" class="bar">
+						<a id="logo" href="/"></a>
+						<a id="nav-toggle" onclick="showHideNav()" href="#"></a>
+					</div>
+					<div class="nav-background">
+						<ul>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Work</a></li>
+							<li><a href="#">Resume</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="masthead-content">
+					<h1 class="text-center">Our experiences connect us.</h1>
+					<h1 class="text-center"><small>I’m Lyle, and I am an Experience Designer.</small></h1>
+				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="row opportunity">
-				<div class="col-md-4 col-md-offset-2">
-					<h2 class="text-right">Every connection is a new opportunity.</h2>
-					<h2 class="text-right"><small>An oportunity to have a new relationship,<br />or keep an old one.</small></h2>
+				<div class="opportunity-content">
+					<div class="col-md-4 col-md-offset-2">
+						<h2 class="text-right">Every connection is a new opportunity.</h2>
+						<h2 class="text-right"><small>An oportunity to have a new relationship,<br />or keep an old one.</small></h2>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -47,14 +51,14 @@
 					<h2 class="text-center">I can help you connect with your users.</h2>
 					<h2 class="text-center"><small>Focus on who’s important, and nothing else. </small></h2>
 					<div class="text-center">
-						<a class="btn btn-primary" href="#">See how.</a>
+						<a class="btn btn-primary btn-lg" href="#">See how.</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
 			<div class="row resume">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-6 col-md-offset-2">
 					<h2 >Helping you communicate is my passion.</h2>
 					<p>My name is Lyle Rohr, and I am an Experience Designer.</p>
 					<p>Over the past 11 years, I have honed my skills through experience in advertising agencies and a startup here and there, mainly focusing on communication strategy and user experience design. I've worked with some of the brightest minds to bring experiences to life for some of the biggest brands.</p>
@@ -65,37 +69,89 @@
 		<div class="container">
 			<div class="row specialties">
 				<h3>These are my specialties.</h3>
-				<p>My expertise spans the gap between concept and execution.  I thrive as a big thinker, but my sleeves are already rolled up so we can get down to business.</p>
-				<div class="col-md-4">
+				<h3><small>My expertise spans the gap between concept and execution.  I thrive as a big thinker, but my sleeves are already rolled up so we can get down to business.</small></h3>
+				<div class="specialties-tiles">
+				<div class="col-md-4 specialty-tile">
 					<h4>Experience Design</h4>
 					<p>All we create is designed to be used by a person, your grandmother, a potential customer, your clients. Creating experiences is more than happenstance when designed with someone in mind. It's not just a mobile app, it's a real part of their life.</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 specialty-tile">
 					<h4>Concept Creation</h4>
 					<p>Whether you need a 30 day promotion, or an enterprise-level intranet, it all starts with a need. Ideas are never born fully formed. The best ideas are honed by a group of like-minded individuals over time. I help bring ideas to the table aimed at achieving your goals.</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 specialty-tile">
 					<h4>Visualizing Ideas</h4>
 					<p>Ushering a concept into reality often takes some explanation, some convincing, and a way to help visualize what it could be. Taking a concept from idea to reality is one of my specialties.</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 specialty-tile">
 					<h4>Flows, Wireframes, and Prototypes</h4>
 					<p>From tiny projects to massive ones, sketches, user flows, wireframes, and prototypes provide a more precise view of what your experience should be, and maybe more importantly, what it shouldn't be.</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 specialty-tile">
 					<h4>User Interface Design (UI)</h4>
 					<p>Wireframes are the bones of an experience, but user interface design is what makes it really come to life. Colors and shapes fill our eyes with emotion which help our users connect with your brand.</p>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 specialty-tile">
 					<h4>Front-End Engineering</h4>
 					<p>HTML, CSS3, and JavaScript are the language of the web these days. Not only can I develop your new app, having a firm grasp on how the online world works helps keep the ideation process grounded, budgets on track, and experiences as great as they can be.</p>
 				</div>
+				</div>
 				<div class="text-center">
-						<a class="btn btn-primary" href="#">Work with me.</a>
+						<a class="btn btn-primary btn-lg" href="#">Work with me.</a>
 				</div>
 			</div>
 		</div>
-			
+		
+		<div class="container">
+			<h3>Portfolio</h3>
+			<p>A selection of my work that I’m most proud of.</p>
+		
+			<div class="row portfolio">
+				<div class="col-md-3 portfolio-tile">
+					<a href="#">
+						<figure>
+							<img src="assets/images/resume.jpg" />
+						</figure>
+					</a>
+				</div>
+				<div class="col-md-3 portfolio-tile">
+					<a href="#">
+						<figure>
+							<img src="assets/images/resume.jpg" />
+						</figure>
+					</a>
+				</div>
+				<div class="col-md-3 portfolio-tile">
+					<a href="#">
+						<figure>
+							<img src="assets/images/opportunity.jpg" />
+						</figure>
+					</a>
+				</div>
+				<div class="col-md-3 portfolio-tile">
+					<a href="#">
+						<figure>
+							<img src="assets/images/resume.jpg" />
+						</figure>
+					</a>
+				</div>
+				<div class="col-md-3 portfolio-tile">
+					<a href="#">
+						<figure>
+							<img src="assets/images/opportunity.jpg" />
+						</figure>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+					<h6>Copyright <span class="fa fa-copyright"></span> 2017 SSXD, Inc.</h6>
+				</div>
+			</div>
+		</div>
 			
 		
 		

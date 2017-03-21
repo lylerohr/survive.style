@@ -1,3 +1,131 @@
 .masthead {
-	height: 30rem;
+	height: 100vh;
+	background-image: url(../images/ssxd-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	position: relative;
+}
+
+.masthead-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.masthead .masthead-content h1 {
+	margin: 0;
+	padding: 0;
+	line-height: 3.5rem;
+}
+
+.masthead .masthead-content h1 small {
+	margin-top: $margin-base !important;
+	color: $color-brand-secondary;
+}
+
+@media screen and (max-width: 768px) {
+	.masthead .masthead-content h1 {
+		margin: 0;
+		padding: 0;
+		line-height: 2.1rem;
+		font-size: 2rem;
+	}
+	
+	.masthead .masthead-content h1 small {
+		margin-top: $margin-base !important;
+		font-size: 1rem;
+	}
+}
+
+.opportunity {
+	background-image: url(../images/opportunity.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.opportunity-content {
+
+}
+
+.connect {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.connect h2 {
+	margin: 0;
+	padding: 0;
+	line-height: 3rem;
+}
+
+.connect a {
+	margin-top: 5rem;
+}
+
+.resume {
+	height: 100vh;
+	background-image: url(../images/resume.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.resume h2 {
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+.resume a {
+	margin-top: 2rem;
+	margin-right: 1rem;
+}
+
+.specialties {
+	padding-top: 4rem;
+	height: 100vh;
+}
+
+.specialties h3 {
+	margin: 0;
+}
+
+.specialties-tiles {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.specialty-tile {
+	height: 14rem;
+}
+
+.portfolio {
+	height: 100vh;
+	margin-top: 4rem;
+}
+
+.portfolio-tile {
+	
+}
+
+.portfolio-tile img {
+	width: 100%;
+}
+
+.footer {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
 }
