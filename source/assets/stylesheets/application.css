@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Catamaran:100,200|Work+Sans:100,200,300,400,500");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6106,19 +6107,30 @@ html {
   height: 100%; }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-size: 0.875rem;
-  color: #737373;
+  font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
+  color: #aeaeae;
   transition: 0.15s;
-  height: 100%; }
+  height: 100%;
+  background-color: #0e1218; }
+
+a {
+  color: #dad7c2; }
+
+a:hover,
+a:active,
+a:focus {
+  color: #c7c2a2;
+  text-decoration: none; }
 
 button,
 .btn {
   display: inline-block;
   margin-bottom: 0;
   padding: 0.5rem 1rem;
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.3rem;
   text-align: center;
   white-space: nowrap;
@@ -6131,15 +6143,15 @@ button,
   -ms-user-select: none;
   user-select: none;
   background-image: none;
-  border: 2px solid transparent;
-  border-radius: 0.125rem;
+  border: 1px solid transparent;
+  border-radius: 0.188rem;
   transition: 0.15s; }
 
 .btn-default,
 .btn-primary {
-  background-color: #cd453d;
+  background-color: transparent;
   border-color: #cd453d;
-  color: #dad7c2; }
+  color: #cd453d; }
 
 .btn-default:hover,
 .btn-default:active,
@@ -6154,7 +6166,7 @@ button,
 .btn-secondary,
 .btn-info {
   background-color: transparent;
-  border: 2px #cd453d solid;
+  border: 1px #cd453d solid;
   color: #cd453d;
   transition: 0.15s;
   padding: 0.5rem 1rem; }
@@ -6237,16 +6249,37 @@ button,
 .color-white {
   background-color: #ffffff; }
 
+@font-face {
+  font-family: 'font-awesome';
+  src: url("../../bower_components/font-awesome/fonts/fontawesome-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../bower_components/font-awesome/fonts/fontawesome-webfont.woff2") format("woff2"), url("../../bower_components/font-awesome/fonts/fontawesome-webfont.woff") format("woff"), url("../../bower_components/font-awesome/fonts/fontawesome-webfont.ttf") format("truetype"), url("../../bower_components/font-awesome/fonts/fontawesome-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem; }
 
 h1 {
-  font-size: 41px;
-  color: #cd453d; }
+  font-size: 56px;
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #dad7c2;
+  font-weight: 100; }
+
+h1 small {
+  font-size: 24px;
+  color: #dad7c2;
+  font-weight: 100; }
 
 h2 {
-  font-size: 34px;
-  color: #aeaeae; }
+  font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 48px;
+  color: #aeaeae;
+  font-weight: 100; }
+
+h2 small {
+  font-size: 20px;
+  color: #dad7c2;
+  font-weight: 100; }
 
 h3 {
   font-size: 28px;
@@ -6279,13 +6312,166 @@ h6 {
   display: inline-block;
   margin-right: 1rem; }
 
+nav #logo {
+  background-image: url(../images/ssxd-logo.png);
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  z-index: 1000;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-top: .5rem;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+nav.open #logo {
+  background-image: url(../images/ssxd-logo-dark.png); }
+
+nav #nav-toggle {
+  float: right;
+  font-size: 20.8px;
+  color: #cd453d;
+  height: 100%;
+  line-height: 4rem;
+  padding-right: 2rem;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+nav #nav-toggle::after {
+  font-family: 'font-awesome';
+  content: "\f0c9"; }
+
+nav.open #nav-toggle {
+  color: #212a38; }
+
+nav.open #nav-toggle::after {
+  font-family: 'font-awesome';
+  content: "\f00d"; }
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  height: 80px;
+  color: #fff;
+  padding-top: 0px;
+  background: none;
+  z-index: 1000;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s; }
+
+nav.open .bar {
+  margin-top: 0px;
+  background: none; }
+
+nav .bar {
+  position: fixed;
+  z-index: 2000;
+  margin-top: 0px;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  background-color: transparent;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s; }
+
+nav .bar.scrolled {
+  background-color: rgba(205, 69, 61, 0.3);
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 3rem; }
+
+nav .bar.scrolled #logo {
+  height: 2rem;
+  width: 2rem;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+nav .bar.scrolled #nav-toggle {
+  line-height: 3rem;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+nav .nav-background {
+  z-index: 1500;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: table;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s; }
+
+nav.open .nav-background {
+  background-color: rgba(205, 69, 61, 0.9) !important;
+  text-align: center; }
+
+nav .nav-background ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+nav ul {
+  display: none;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  vertical-align: middle; }
+
+nav.open ul {
+  display: table-cell;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s; }
+
+nav .nav-background ul li {
+  width: 100%; }
+
+nav .nav-background ul li a {
+  color: #ffffff;
+  font-size: 56px;
+  width: 100%;
+  display: block; }
+
+nav .nav-background ul li a:hover {
+  background-color: #0e1218;
+  color: #cd453d; }
+
 html {
   font-size: 16px;
   height: 100%; }
 
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-size: 0.875rem;
-  color: #737373;
+  font-family: "Catamaran", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 16px;
+  color: #aeaeae;
   transition: 0.15s;
-  height: 100%; }
+  height: 100%;
+  background-color: #0e1218; }
+
+.masthead {
+  height: 30rem; }

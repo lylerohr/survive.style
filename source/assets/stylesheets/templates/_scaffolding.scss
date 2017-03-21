@@ -7,9 +7,10 @@ html {
 
 
 body {
-	font-family: $font-stack;
+	font-family: $font-stack-catamaran;
 	font-size: $font-size-body;
 	color: $text-color;
 	transition: $transition;
 	height: 100%;
+	background-color: $body-bg;
 }

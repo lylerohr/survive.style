@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200|Work+Sans:100,200,300,400,500');
+
+
+@font-face {
+  font-family: 'font-awesome';
+  src: url('../../bower_components/font-awesome/fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../bower_components/font-awesome/fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../bower_components/font-awesome/fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../bower_components/font-awesome/fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../bower_components/font-awesome/fonts/fontawesome-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

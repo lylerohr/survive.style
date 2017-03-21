@@ -5,13 +5,29 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	font-size: $font-size-h1; 
-	color: $color-brand-primary;
+	font-size: $font-size-h1;
+	font-family: $font-stack;
+	color: $color-brand-tertiary;
+	font-weight: 100;
+}
+
+h1 small {
+	font-size: $font-size-h1-subhead;
+	color: $color-brand-tertiary;
+	font-weight: 100;
 }
 
 h2 {
+	font-family: $font-stack;
 	font-size: $font-size-h2; 
 	color: $color-brand-secondary;
+	font-weight: 100;
+}
+
+h2 small {
+	font-size: $font-size-h2-subhead;
+	color: $color-brand-tertiary;
+	font-weight: 100;
 }
 	
 h3 {
