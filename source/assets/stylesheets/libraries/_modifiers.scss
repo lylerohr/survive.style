@@ -1,0 +1,103 @@
+// _modifiers.scss
+
+//Typography
+.text-bold {
+	font-weight: bold;
+}
+
+.large-text {
+	font-size: 4rem;
+}
+
+.fa {
+	top: 0;
+}
+
+.truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.fade-out {
+  position: relative;
+  height: $line-height-base*3; /* exactly three lines */
+  overflow: hidden;
+}
+.fade-out::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: $line-height-base;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), $color-gray-extra-light 50%);
+}
+
+//Spacing
+.padding-sm-vertical {
+	padding-top: $padding-small-vertical;
+}
+
+.padding-xs-vertical {
+	padding-top: $padding-xs-vertical;
+}
+
+.padding-none-vertical {
+	padding-top: 0;
+}
+
+.padding-left-none {
+	padding-left: $padding-none;
+}
+
+.padding-right-none {
+	padding-right: $padding-none;
+}
+
+.margin-none-vertical {
+	margin-top: 0;
+}
+
+//Layout
+.full-bleed {
+	margin-left: -$page-padding-left !important;
+	margin-right: -$page-padding-right !important;
+}
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}
+
+.element-center {
+	margin: 0 auto;
+	display: block;
+}
+
+//Images
+.fluid-image {
+	width: 100%;
+}
+
+.border-image {
+	border: 1px solid $color-gray-extra-light;
+}
+
+//Background
+.background-fixed {
+	position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+// Hide Breadcrumb
+
+.breadcrumb {
+	display: none;
+}
