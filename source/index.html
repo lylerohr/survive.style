@@ -19,28 +19,29 @@
 				<nav id="nav">
 					<div id="bar" class="bar">
 						<a id="logo" href="/"></a>
-						<a id="nav-toggle" onclick="showHideNav()" href="#"></a>
+						<a id="nav-toggle" onclick="showHideNav()"></a>
 					</div>
 					<div class="nav-background">
 						<ul>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Work</a></li>
-							<li><a href="#">Resume</a></li>
+							<li><a onclick="showHideNav()" href="#resume">About</a></li>
+							<li><a onclick="showHideNav()" href="#portfolio">Work</a></li>
+							<li><a onclick="showHideNav()" href="#">Resume</a></li>
 						</ul>
 					</div>
 				</nav>
-				<div class="masthead-content">
-					<h1 class="text-center">Our experiences connect us.</h1>
-					<h1 class="text-center"><small>I’m Lyle, and I am an Experience Designer.</small></h1>
+				<div class="masthead-content text-center">
+					<h1>Our experiences connect us.</h1>
+					<h1><small>I’m Lyle, and I am an Experience Designer.</small></h1>
+					<a class="masthead-down-arrow" href="#opportunity"><span class="fa fa-arrow-circle-o-down"></span></a>
 				</div>
 			</div>
 		</div>
 		<div class="container-fluid">
-			<div class="row opportunity">
+			<div id="opportunity" class="row opportunity">
 				<div class="opportunity-content">
-					<div class="col-md-4 col-md-offset-2">
+					<div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1">
 						<h2 class="text-right">Every connection is a new opportunity.</h2>
-						<h2 class="text-right"><small>An oportunity to have a new relationship,<br />or keep an old one.</small></h2>
+						<p class="text-right">An oportunity to have a new relationship,<br />or keep an old one.</p>
 					</div>
 				</div>
 			</div>
@@ -49,7 +50,7 @@
 			<div class="row connect">
 				<div class="col-md-12">
 					<h2 class="text-center">I can help you connect with your users.</h2>
-					<h2 class="text-center"><small>Focus on who’s important, and nothing else. </small></h2>
+					<p class="text-center">Focus on who’s important, and nothing else. </p>
 					<div class="text-center">
 						<a class="btn btn-primary btn-lg" href="#">See how.</a>
 					</div>
@@ -57,9 +58,9 @@
 			</div>
 		</div>
 		<div class="container-fluid">
-			<div class="row resume">
+			<div id="resume" class="row resume">
 				<div class="col-md-6 col-md-offset-2">
-					<h2 >Helping you communicate is my passion.</h2>
+					<h2>Helping you communicate is my passion.</h2>
 					<p>My name is Lyle Rohr, and I am an Experience Designer.</p>
 					<p>Over the past 11 years, I have honed my skills through experience in advertising agencies and a startup here and there, mainly focusing on communication strategy and user experience design. I've worked with some of the brightest minds to bring experiences to life for some of the biggest brands.</p>
 					<a class="btn btn-primary" href="#">My Resume</a> <a class="btn btn-primary" href="#">My Portfolio</a>
@@ -69,30 +70,36 @@
 		<div class="container">
 			<div class="row specialties">
 				<h3>These are my specialties.</h3>
-				<h3><small>My expertise spans the gap between concept and execution.  I thrive as a big thinker, but my sleeves are already rolled up so we can get down to business.</small></h3>
-				<div class="specialties-tiles">
-				<div class="col-md-4 specialty-tile">
-					<h4>Experience Design</h4>
+				<p>My expertise spans the gap between concept and execution.  I thrive as a big thinker, but my sleeves are already rolled up so we can get down to business.<p>
+				<div class="row specialties-tiles">
+				<div class="col-md-4 col-sm-6 specialty-tile">
+					<span class="fa fa-user-circle-o text-center"></span>
+					<h4 class="text-center">Experience Design</h4>
 					<p>All we create is designed to be used by a person, your grandmother, a potential customer, your clients. Creating experiences is more than happenstance when designed with someone in mind. It's not just a mobile app, it's a real part of their life.</p>
 				</div>
-				<div class="col-md-4 specialty-tile">
-					<h4>Concept Creation</h4>
+				<div class="col-md-4 col-sm-6 specialty-tile">
+					<span class="fa fa-lightbulb-o text-center"></span>
+					<h4 class="text-center">Concept Creation</h4>
 					<p>Whether you need a 30 day promotion, or an enterprise-level intranet, it all starts with a need. Ideas are never born fully formed. The best ideas are honed by a group of like-minded individuals over time. I help bring ideas to the table aimed at achieving your goals.</p>
 				</div>
-				<div class="col-md-4 specialty-tile">
-					<h4>Visualizing Ideas</h4>
+				<div class="col-md-4 col-sm-6 specialty-tile">
+					<span class="fa fa-cube text-center"></span>
+					<h4 class="text-center">Visualizing Ideas</h4>
 					<p>Ushering a concept into reality often takes some explanation, some convincing, and a way to help visualize what it could be. Taking a concept from idea to reality is one of my specialties.</p>
 				</div>
-				<div class="col-md-4 specialty-tile">
-					<h4>Flows, Wireframes, and Prototypes</h4>
+				<div class="col-md-4 col-sm-6 specialty-tile">
+					<span class="fa fa-object-ungroup text-center"></span>
+					<h4 class="text-center">Flows, Wireframes, and Prototypes</h4>
 					<p>From tiny projects to massive ones, sketches, user flows, wireframes, and prototypes provide a more precise view of what your experience should be, and maybe more importantly, what it shouldn't be.</p>
 				</div>
-				<div class="col-md-4 specialty-tile">
-					<h4>User Interface Design (UI)</h4>
+				<div class="col-md-4 col-sm-6 specialty-tile">
+					<span class="fa fa-eyedropper text-center"></span>
+					<h4 class="text-center">User Interface Design (UI)</h4>
 					<p>Wireframes are the bones of an experience, but user interface design is what makes it really come to life. Colors and shapes fill our eyes with emotion which help our users connect with your brand.</p>
 				</div>
-				<div class="col-md-4 specialty-tile">
-					<h4>Front-End Engineering</h4>
+				<div class="col-md-4 col-sm-6 specialty-tile">
+					<span class="fa fa-code text-center"></span>
+					<h4 class="text-center">Front-End Engineering</h4>
 					<p>HTML, CSS3, and JavaScript are the language of the web these days. Not only can I develop your new app, having a firm grasp on how the online world works helps keep the ideation process grounded, budgets on track, and experiences as great as they can be.</p>
 				</div>
 				</div>
@@ -102,40 +109,63 @@
 			</div>
 		</div>
 		
-		<div class="container">
+		<div id="portfolio"  class="container">
 			<h3>Portfolio</h3>
 			<p>A selection of my work that I’m most proud of.</p>
 		
 			<div class="row portfolio">
-				<div class="col-md-3 portfolio-tile">
+				<div class="grid">
+					<div class="grid-sizer col-md-4"></div>
+				<div class="grid-item col-md-4 portfolio-tile">
 					<a href="#">
 						<figure>
 							<img src="assets/images/resume.jpg" />
 						</figure>
 					</a>
 				</div>
-				<div class="col-md-3 portfolio-tile">
+				<div class="grid-item col-md-4 portfolio-tile">
 					<a href="#">
 						<figure>
 							<img src="assets/images/resume.jpg" />
 						</figure>
 					</a>
 				</div>
-				<div class="col-md-3 portfolio-tile">
+				<div class="grid-item col-md-4 portfolio-tile">
 					<a href="#">
 						<figure>
 							<img src="assets/images/opportunity.jpg" />
 						</figure>
 					</a>
 				</div>
-				<div class="col-md-3 portfolio-tile">
+				<div class="grid-item col-md-4 portfolio-tile">
 					<a href="#">
 						<figure>
 							<img src="assets/images/resume.jpg" />
 						</figure>
 					</a>
 				</div>
-				<div class="col-md-3 portfolio-tile">
+				<div class="grid-item col-md-4 portfolio-tile">
+					<a href="#">
+						<figure>
+							<img src="assets/images/opportunity.jpg" />
+						</figure>
+					</a>
+				</div>
+				<div class="grid-item col-md-4 portfolio-tile">
+					<a href="#">
+						<figure>
+							<img src="assets/images/opportunity.jpg" />
+						</figure>
+					</a>
+				</div>
+				<div class="grid-item col-md-4 portfolio-tile">
+					<a href="#">
+						<figure>
+							<img src="assets/images/opportunity.jpg" />
+						</figure>
+					</a>
+				</div>
+				<div class="grid-item col-md-4 portfolio-tile">
 					<a href="#">
 						<figure>
 							<img src="assets/images/opportunity.jpg" />
@@ -156,25 +186,40 @@
 		
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="bower_components/packery/dist/packery.pkgd.min.js"></script>
 		<script>
 		    function showHideNav() {
-		       var x = document.getElementById('body');
 		       var y = document.getElementById('nav');
-		       console.log(x);
-		       x.classList.toggle("clip");
 		       y.classList.toggle("open");
 		    };
 		    
 		    function navBackground() {
-			    console.log(document.getElementsByClassName('bar'));
 				if (document.body.scrollTop > 0) {
 					document.getElementById('bar').classList.add("scrolled");
 				}  else {
 					document.getElementById('bar').classList.remove("scrolled");
-				}
+				};
 		    };
 		    
+			$('a[href*="#"]:not([href="#"])').click(function() {
+			  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			    var target = $(this.hash);
+			    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			    if (target.length) {
+			      $('html, body').animate({
+			        scrollTop: target.offset().top
+			      }, 1000);
+			      return false;
+			    }
+			  }
+			});
 		    
+		    $('.grid').packery({
+			  // use a separate class for itemSelector, other than .col-
+			  itemSelector: '.grid-item', 
+			  columnWidth: '.grid-sizer',
+			  percentPosition: true
+			});
 		    
 	    </script>
 	</body>

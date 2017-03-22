@@ -10,10 +10,11 @@ nav #logo {
     background-repeat: no-repeat;
     display: inline-block;
     margin-top: .8rem;
-	-moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+	-moz-transition: all $transition;
+    -o-transition: all $transition;
+    -webkit-transition: all $transition;
+    transition: all $transition;
+
 }
 
 nav.open #logo {
@@ -27,10 +28,11 @@ nav #nav-toggle {
     height: 100%;
     line-height: 4rem;
     padding-right: 2rem;
-	-moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+	-moz-transition: all $transition;
+    -o-transition: all $transition;
+    -webkit-transition: all $transition;
+    transition: all $transition;
+    cursor:pointer;
 }
 
 nav #nav-toggle::after {
@@ -85,11 +87,11 @@ nav .bar {
 }
 
 nav .bar.scrolled {
-    background-color: rgba(205,69,61,0.3);
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    background-color: rgba(205,69,61,0.15);
+    -moz-transition: all $transition;
+    -o-transition: all $transition;
+    -webkit-transition: all $transition;
+    transition: all $transition;
     height: 3rem;
 }
 
@@ -97,38 +99,45 @@ nav .bar.scrolled #logo {
 	height: 2rem;
 	width: 2rem;
 	margin-top: .55rem;
-	-moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+	-moz-transition: all $transition;
+    -o-transition: all $transition;
+    -webkit-transition: all $transition;
+    transition: all $transition;
 }
 
 nav .bar.scrolled #nav-toggle {
 	line-height: 3rem;
-	    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+	    -moz-transition: all $transition;
+    -o-transition: all $transition;
+    -webkit-transition: all $transition;
+    transition: all $transition;
 }
 
 nav .nav-background {
-    z-index: 1500;
+    z-index: 0;
     position: fixed;
-    top: 0px;
+    top: -10px;
     width: 100%;
     height: 100%;
     background: none;
-    display: none;
-    -moz-transition: all $transition;
+    visibility: hidden;
+    display: table;
+	-moz-transition: all $transition;
     -o-transition: all $transition;
     -webkit-transition: all $transition;
     transition: all $transition;
 }
 
 nav.open .nav-background {
+	z-index: 1500;
+	top: 0;
     background-color: rgba(205,69,61,0.9) !important;
 	text-align: center;
-	display: table;
+	visibility: visible;
+	-moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 nav .nav-background ul {
@@ -164,6 +173,10 @@ nav .nav-background ul li a {
 	font-size: $font-size-h1;
 	width: 100%;
 	display: block;
+	-moz-transition: all $transition;
+    -o-transition: all $transition;
+    -webkit-transition: all $transition;
+    transition: all $transition;
 }
 
 nav .nav-background ul li a:hover {

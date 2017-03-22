@@ -1,5 +1,5 @@
 .masthead {
-	height: 100vh;
+	min-height: 100vh;
 	background-image: url(../images/ssxd-bg.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -26,12 +26,20 @@
 	color: $color-brand-secondary;
 }
 
+.masthead-down-arrow {
+	color: $color-brand-primary;
+	font-size: 2.2rem;
+	font-weight: 100;
+	position: relative;
+	top: 6rem;
+}
+
 @media screen and (max-width: 768px) {
 	.masthead .masthead-content h1 {
 		margin: 0;
 		padding: 0;
-		line-height: 2.1rem;
-		font-size: 2rem;
+		line-height: 2.6rem;
+		font-size: 2.4rem;
 	}
 	
 	.masthead .masthead-content h1 small {
@@ -46,18 +54,39 @@
 	background-attachment: fixed;
 	background-position: center top;
 	position: relative;
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.opportunity-content {
+.opportunity-content h2 {
+	margin: 0;
+	padding: 0;
+	line-height: 3.2rem;
+}
 
+.opportunity-content p {
+	line-height: 1.8rem;
+	color: $color-brand-tertiary;
+	margin-top: 2rem;
+	font-size: 1.3rem;
+	font-family: $font-stack;
+}
+
+@media screen and (max-width: 768px) {
+	.opportunity-content h2 {
+		line-height: 2.7rem;
+		font-size: 2.4rem;
+	}
+	
+	.opportunity-content p {
+		font-size: 1.2rem;
+	}
 }
 
 .connect {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -69,8 +98,24 @@
 	line-height: 3rem;
 }
 
+.connect p {
+	color: $color-brand-tertiary;
+	font-family: $font-stack;
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+	font-weight: 100;
+}
+
 .connect a {
 	margin-top: 5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+	.connect h2 {
+		line-height: 2.7rem;
+		font-size: 2.4rem;
+	}
 }
 
 .resume {
@@ -96,11 +141,20 @@
 
 .specialties {
 	padding-top: 4rem;
-	height: 100vh;
+	min-height: 100vh;
+	margin-bottom: 4rem;
 }
 
 .specialties h3 {
 	margin: 0;
+}
+
+.specialties>p {
+	line-height: 1.8rem;
+	color: $color-brand-tertiary;
+
+	font-size: 1.3rem;
+	font-family: $font-stack;
 }
 
 .specialties-tiles {
@@ -109,11 +163,29 @@
 }
 
 .specialty-tile {
-	height: 14rem;
+	height: 18rem;
+    padding-top: 1rem;
+    font-weight: 100;
+}
+
+.specialties .fa {
+	width: 100%;
+	font-size: 3.5rem;
+	color: $color-brand-primary;
+}
+
+.specialties .btn {
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.specialty-tile {
+		margin-top: 4rem;
+	}
 }
 
 .portfolio {
-	height: 100vh;
+	min-height: 100vh;
 	margin-top: 4rem;
 }
 
