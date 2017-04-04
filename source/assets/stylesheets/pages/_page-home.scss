@@ -1,6 +1,6 @@
 .masthead {
 	min-height: 100vh;
-	background-image: url(../images/ssxd-bg.jpg);
+	background-image: url(../images/ssxd-plane.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center top;
@@ -185,12 +185,11 @@
 }
 
 .portfolio {
-	min-height: 100vh;
 	margin-top: 4rem;
 }
 
 .portfolio-tile {
-	
+	margin-bottom: 1.5rem;
 }
 
 .portfolio-tile img {

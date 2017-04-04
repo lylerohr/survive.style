@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Catamaran:100,200|Work+Sans:100,200,300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:100,200,600|Work+Sans:100,200,300,400,500");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6114,6 +6114,10 @@ body {
   height: 100%;
   background-color: #0e1218; }
 
+.container,
+.container-fluid {
+  background-color: #0E1218; }
+
 a {
   color: #cd453d; }
 
@@ -6156,9 +6160,11 @@ button,
 .btn-default:hover,
 .btn-default:active,
 .btn-default:focus,
+.btn-default:active:focus,
 .btn-primary:hover,
 .btn-primary:active,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary:active:focus {
   background-color: #ab332c;
   border-color: #ab332c;
   color: #dad7c2; }
@@ -6259,6 +6265,41 @@ button,
   /* IE9 Compat Modes */
   src: url("../../bower_components/font-awesome/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../bower_components/font-awesome/fonts/fontawesome-webfont.woff2") format("woff2"), url("../../bower_components/font-awesome/fonts/fontawesome-webfont.woff") format("woff"), url("../../bower_components/font-awesome/fonts/fontawesome-webfont.ttf") format("truetype"), url("../../bower_components/font-awesome/fonts/fontawesome-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'ssxd-icons';
+  src: url("../fonts/ssxd-icons/ssxd-icons.eot?dtr0ih");
+  src: url("../fonts/ssxd-icons/ssxd-icons.eot?dtr0ih#iefix") format("embedded-opentype"), url("../fonts/ssxd-icons/ssxd-icons.ttf?dtr0ih") format("truetype"), url("../fonts/ssxd-icons/ssxd-icons.woff?dtr0ih") format("woff"), url("../fonts/ssxd-icons/ssxd-icons.svg?dtr0ih#ssxd-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ssxd-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-down:before {
+  content: "\e900"; }
+
+.icon-arrow-left:before {
+  content: "\1f32e"; }
+
+.icon-arrow-right:before {
+  content: "\e902"; }
+
+.icon-arrow-up:before {
+  content: "\e903"; }
+
+.icon-patty:before {
+  content: "\e904"; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem; }
@@ -6370,8 +6411,8 @@ nav #nav-toggle {
   cursor: pointer; }
 
 nav #nav-toggle::after {
-  font-family: 'font-awesome';
-  content: "\f0c9"; }
+  font-family: 'ssxd-icons';
+  content: "\e904"; }
 
 nav.open #nav-toggle {
   color: #212a38; }
@@ -6501,6 +6542,105 @@ nav .nav-background ul li a:hover {
   background-color: #0e1218;
   color: #cd453d; }
 
+.portfolio-slide-info-panel {
+  background-color: #1B1F24;
+  min-height: 75vh;
+  border-right: .5rem solid #35383C;
+  padding-top: 4rem; }
+
+.project-information {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66%; }
+
+.portfolio-slide-image-panel {
+  background-color: rgba(53, 56, 60, 0.15);
+  min-height: 75vh; }
+
+.project-slide-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%; }
+
+.project-meta-field {
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+.project-meta-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #dad7c2;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.project-meta-overview {
+  font-weight: 100;
+  font-size: 1.5rem; }
+
+.project-additional-information {
+  margin-top: 4rem;
+  margin-bottom: 2rem; }
+
+.project-additional-information p {
+  margin-bottom: 0.5rem; }
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  z-index: 100; }
+  .slick-prev:hover,
+  .slick-prev:focus,
+  .slick-next:hover, .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+
+.slick-prev {
+  left: -3rem; }
+
+.slick-next {
+  right: -3rem; }
+
+.slick-prev::before {
+  font-family: 'ssxd-icons' !important;
+  font-size: 1.9rem;
+  content: "\1f32e";
+  color: #cd453d; }
+
+.slick-next::before {
+  font-family: 'ssxd-icons' !important;
+  font-size: 1.9rem;
+  content: "\e902";
+  color: #cd453d; }
+
+.project-t-mobile {
+  height: 75vh;
+  width: 100%;
+  background-image: url(../images/t-mobile-tuesdays.png);
+  background-size: 100%;
+  background-position: center center; }
+
 html {
   font-size: 16px;
   height: 100%; }
@@ -6513,9 +6653,13 @@ body {
   height: 100%;
   background-color: #0e1218; }
 
+.container,
+.container-fluid {
+  background-color: #0E1218; }
+
 .masthead {
   min-height: 100vh;
-  background-image: url(../images/ssxd-bg.jpg);
+  background-image: url(../images/ssxd-plane.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center top;
@@ -6664,8 +6808,10 @@ body {
     margin-top: 4rem; } }
 
 .portfolio {
-  min-height: 100vh;
   margin-top: 4rem; }
+
+.portfolio-tile {
+  margin-bottom: 1.5rem; }
 
 .portfolio-tile img {
   width: 100%; }
@@ -6673,3 +6819,18 @@ body {
 .footer {
   padding-top: 4rem;
   padding-bottom: 2rem; }
+
+.page-resume .masthead {
+  min-height: 100vh;
+  background-image: url(../images/ssxd-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  position: relative; }
+
+#portfolio {
+  padding-top: 4rem; }
+
+.resume-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }

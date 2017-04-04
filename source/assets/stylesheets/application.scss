@@ -41,12 +41,15 @@
 @import "molecules/typeface-display";
 @import "molecules/wells";
 
+@import "organisms/grid";
 @import "organisms/modals";
 @import "organisms/navbar";
-@import "organisms/grid";
+@import "organisms/portfolio-carousel";
 
 @import "templates/print";
 @import "templates/scaffolding";
 
 @import "pages/page-home";
 @import "pages/page-about";
+@import "pages/page-resume";
+

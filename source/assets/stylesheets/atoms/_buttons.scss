@@ -48,9 +48,11 @@ button,
 .btn-default:hover,
 .btn-default:active,
 .btn-default:focus,
+.btn-default:active:focus,
 .btn-primary:hover,
 .btn-primary:active,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary:active:focus {
 	background-color: $btn-primary-bg-hover;
 	border-color: $btn-primary-border-hover;
 	color: $btn-primary-color-hover;
