@@ -1,0 +1,118 @@
+// _buttons.scss
+
+a {
+	color: $link-color;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: $link-hover-color;
+	text-decoration: $link-hover-decoration;
+}
+
+button,
+.btn {
+	display: inline-block;
+	margin-bottom: 0;
+	padding: $btn-padding-base;
+	font-family: $font-stack;
+    font-size: $font-size-base;
+    font-weight: 100;
+    line-height: $line-height-base;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: $btn-border-thickness-base solid transparent;
+    border-radius: $border-radius-base;
+    transition: $transition;
+}
+
+
+
+.btn-default,
+.btn-primary {
+	background-color: $btn-bg-ghost;
+	border-color: $btn-primary-border;
+	color: $btn-primary-color;
+}
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:active:focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus {
+	background-color: $btn-primary-bg-hover;
+	border-color: $btn-primary-border-hover;
+	color: $btn-primary-color-hover;
+}
+
+.btn-secondary,
+.btn-info {
+	background-color: $btn-default-bg;
+	border: $btn-border-thickness-base $btn-default-border solid;
+	color: $btn-default-color;
+	transition: $transition;
+	padding: $btn-padding-base;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus  {
+	background-color: $btn-secondary-bg-hover;
+	border-color: $btn-secondary-border-hover;
+	color: $btn-secondary-color-hover;
+}
+
+.btn-tertiary {
+	background-color: $btn-tertiary-bg;
+	border: 2px $btn-tertiary-border solid;
+	color: $btn-tertiary-color;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:active,
+.btn-tertiary:focus {
+	background-color: $btn-tertiary-bg-hover;
+	border-color: $btn-tertiary-border-hover;
+	color: $btn-tertiary-color-hover;
+}
+
+.btn-ghost {
+	background-color: $btn-bg-ghost;
+}
+
+.btn-lg {
+	padding: $btn-padding-large;
+	font-size: $font-size-large;
+}
+
+//CUSTOM OVERRIDES
+// Fixes mismatched button group height
+.input-group .btn,
+.input-group .form-control,
+.toolbar-actions .btn,
+.toolbar-actions .form-control {
+	line-height: 2rem;
+	height: 2rem;
+	padding: 0 1rem;
+}
+
+//Fixes FA vertical alignment in buttons
+.btn .fa {
+	top: 0;
+}

@@ -1,0 +1,202 @@
+.masthead {
+	min-height: 100vh;
+	background-image: url(../images/ssxd-plane.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	position: relative;
+}
+
+.masthead-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.masthead .masthead-content h1 {
+	margin: 0;
+	padding: 0;
+	line-height: 3.5rem;
+}
+
+.masthead .masthead-content h1 small {
+	margin-top: $margin-base !important;
+	color: $color-brand-secondary;
+}
+
+.masthead-down-arrow {
+	color: $color-brand-primary;
+	font-size: 2.2rem;
+	font-weight: 100;
+	position: relative;
+	top: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+	.masthead .masthead-content h1 {
+		margin: 0;
+		padding: 0;
+		line-height: 2.6rem;
+		font-size: 2.4rem;
+	}
+	
+	.masthead .masthead-content h1 small {
+		margin-top: $margin-base !important;
+		font-size: 1rem;
+	}
+}
+
+.opportunity {
+	background-image: url(../images/opportunity.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.opportunity-content h2 {
+	margin: 0;
+	padding: 0;
+	line-height: 3.2rem;
+}
+
+.opportunity-content p {
+	line-height: 1.8rem;
+	color: $color-brand-tertiary;
+	margin-top: 2rem;
+	font-size: 1.3rem;
+	font-family: $font-stack;
+}
+
+@media screen and (max-width: 768px) {
+	.opportunity-content h2 {
+		line-height: 2.7rem;
+		font-size: 2.4rem;
+	}
+	
+	.opportunity-content p {
+		font-size: 1.2rem;
+	}
+}
+
+.connect {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.connect h2 {
+	margin: 0;
+	padding: 0;
+	line-height: 3rem;
+}
+
+.connect p {
+	color: $color-brand-tertiary;
+	font-family: $font-stack;
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+	font-weight: 100;
+}
+
+.connect a {
+	margin-top: 5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+	.connect h2 {
+		line-height: 2.7rem;
+		font-size: 2.4rem;
+	}
+}
+
+.resume {
+	height: 100vh;
+	background-image: url(../images/resume.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.resume h2 {
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+.resume a {
+	margin-top: 2rem;
+	margin-right: 1rem;
+}
+
+.specialties {
+	padding-top: 4rem;
+	min-height: 100vh;
+	margin-bottom: 4rem;
+}
+
+.specialties h3 {
+	margin: 0;
+}
+
+.specialties>p {
+	line-height: 1.8rem;
+	color: $color-brand-tertiary;
+
+	font-size: 1.3rem;
+	font-family: $font-stack;
+}
+
+.specialties-tiles {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.specialty-tile {
+	height: 18rem;
+    padding-top: 1rem;
+    font-weight: 100;
+}
+
+.specialties .fa {
+	width: 100%;
+	font-size: 3.5rem;
+	color: $color-brand-primary;
+}
+
+.specialties .btn {
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.specialty-tile {
+		margin-top: 4rem;
+	}
+}
+
+.portfolio {
+	margin-top: 4rem;
+}
+
+.portfolio-tile {
+	margin-bottom: 1.5rem;
+}
+
+.portfolio-tile img {
+	width: 100%;
+}
+
+.footer {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+}
