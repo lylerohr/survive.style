@@ -16,6 +16,30 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<!-- Start of Async Drift Code -->
+		<script>
+		!function() {
+		  var t;
+		  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+		  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+		  t.factory = function(e) {
+		    return function() {
+		      var n;
+		      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+		    };
+		  }, t.methods.forEach(function(e) {
+		    t[e] = t.factory(e);
+		  }), t.load = function(t) {
+		    var e, n, o, i;
+		    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+		    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+		    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+		  });
+		}();
+		drift.SNIPPET_VERSION = '0.3.1';
+		drift.load('4a96ta434ppk');
+		</script>
+		<!-- End of Async Drift Code -->
 	</head>
 	<body id="body" onscroll="navBackground()">
 		<div class="container-fluid">
@@ -113,6 +137,11 @@
 			</div>
 		</div>
 		
+		<div id="clients" class="container">
+			<h3>Clients I Have Worked With</h3>
+			<img class="client-logos" src="assets/images/clients.png" />
+		</div>
+		
 		<div id="portfolio" class="container">
 			<h3>Portfolio <small>More coming soon!</small></h3>
 			<p>A selection of my work that I’m most proud of.</p>
@@ -134,7 +163,7 @@
 								<p class="project-meta-agency"><span class="text-bold">Agency:</span> The Marketing Store</p>
 								<p class="project-meta-service"><span class="text-bold">Service:</span> User Experience Design</p>
 							</div>
-							<a class="btn btn-primary" href="#">See the Case Study.</a>
+							
 						</div>
 					</div>
 					<div class="col-lg-6 portfolio-slide-image-panel text-center">
@@ -142,103 +171,73 @@
 					</div>
 				</div>
 				
+				<div class="portfolio-slide">
+					<div class="col-lg-6 portfolio-slide-info-panel">
+						<h4 class="project-meta-field text-center">Digital Strategy, UX Design</h4>
+						<h5 class="project-meta-title text-center">McDonald's Create Your Taste</h5>
+						<div class="project-information">
+							<h4 class="project-meta-overview">Overview</h4>
+							<p>The McDonald's Create Your Taste experience is part of a larger campaign to change the greater McDonald's experience through new technology and services. The web and mobile web portion of the project was won by The Marketing Store.</p>
+							<p>My involvement with this project was 2 fold, I was the lead Digital Strategist as well as the UX Designer. A helpful pairing when it comes to creating a web experience.</p>
+							<div class="project-additional-information">
+								<p class="project-meta-client"><span class="text-bold">Client:</span> McDonald's</p>
+								<p class="project-meta-agency"><span class="text-bold">Agency:</span> The Marketing Store</p>
+								<p class="project-meta-service"><span class="text-bold">Service:</span> Digital Strategy, User Experience Design</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-6 portfolio-slide-image-panel text-center">
+						<img class="project-slide-image" src="assets/images/cyt-preview.png" />
+					</div>
+				</div>
+				
+				<div class="portfolio-slide">
+					<div class="col-lg-6 portfolio-slide-info-panel">
+						<h4 class="project-meta-field text-center">Digital Strategy, UX Design</h4>
+						<h5 class="project-meta-title text-center">Arteasan Teas</h5>
+						<div class="project-information">
+							<h4 class="project-meta-overview">Overview</h4>
+							<p>Arteasan Teas is a startup bottled drink brand based out of New York City. It's main competitor is Bai5, another ready-to-drink bottled drink.</p>
+							<p>For this project, my role was primarily UX and digital strategy. I created the basic online strategy as well as the wireframes for the responsive web site.</p>
+							<div class="project-additional-information">
+								<p class="project-meta-client"><span class="text-bold">Client:</span> Arteasan</p>
+								<p class="project-meta-agency"><span class="text-bold">Agency:</span> The Marketing Store</p>
+								<p class="project-meta-service"><span class="text-bold">Service:</span> Digital Strategy, User Experience Design</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-6 portfolio-slide-image-panel text-center">
+						<img class="project-slide-image" src="assets/images/art-preview.png" />
+					</div>
+				</div>
+				<!--
+				<div class="portfolio-slide">
+					<div class="col-lg-6 portfolio-slide-info-panel">
+						<h4 class="project-meta-field text-center">Digital Strategy, UX Design</h4>
+						<h5 class="project-meta-title text-center">In-Car Mobile Ordering and Promotions App Prototype</h5>
+						<div class="project-information">
+							<h4 class="project-meta-overview">Overview</h4>
+							<p>Arteasan Teas is a startup bottled drink brand based out of New York City. It's main competitor is Bai5, another ready-to-drink bottled drink.</p>
+							<p>For this project, my role was primarily UX and digital strategy. I created the basic online strategy as well as the wireframes for the responsive web site.</p>
+							<div class="project-additional-information">
+								<p class="project-meta-client"><span class="text-bold">Client:</span> Arteasan</p>
+								<p class="project-meta-agency"><span class="text-bold">Agency:</span> The Marketing Store</p>
+								<p class="project-meta-service"><span class="text-bold">Service:</span> Digital Strategy, User Experience Design</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-6 portfolio-slide-image-panel text-center">
+						<img class="project-slide-image" src="assets/images/incar-find.png" />
+					</div>
+				</div>
+				-->
+				
 			</div>
 		</div>
-		<!--		
-				<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
-				  <ol class="carousel-indicators">
-				    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
-				    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
-				  </ol>
-				  <div class="carousel-inner" role="listbox">
-				    <div class="item active">
-				     
-				      <div class="row">
-					      <div class="col-lg-6">
-						      <h4 class="project-meta-field">Mobile UX</h4>
-						      <h5 class="project-meta-title">T-Mobile Tuesdays</h5>
-						      <h4 class="overview">Overview</h4>
-						      <p>The T-Mobile Tuesdays program is a sincere customer appreciation app with some serious, Un-Carrier style giveaways.</p>
-							  <p>Some of the mechanisms of the app are complex and new to users. It was my job to help keep the experience intuitive and engaging.</p>
-							  <p class="project-meta-client"><span class="text-bold">Client:</span> T-Mobile</p>
-							  <p class="project-meta-agency"><span class="text-bold">Agency:</span> The Marketing Store</p>
-							  <p class="project-meta-service"><span class="text-bold">Service:</span> User Experience Design</p>
-							  <a class="btn btn-primary" href="#">See the Case Study.</a>
-					      </div>
-						  <div class="col-lg-6">
-							  <div class="project-carousel-image">
-					      </div>
-				      </div>
-				    </div>
-				    <div class="item">
-				      <p>
-				       I'm working on it!
-				      </p>
-				    </div>
-				    <div class="item">
-				      <p>
-				        Come back soon!
-				      </p>
-				    </div>
-				  </div>
-				  <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
-				    <span class="icon-arrow-left" aria-hidden="true"></span>
-				    <span class="sr-only">Previous</span>
-				  </a>
-				  <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
-				    <span class="icon-arrow-right" aria-hidden="true"></span>
-				    <span class="sr-only">Next</span>
-				  </a>
-				</div>
-		-->
-				<!--
-				
-				<div class="col-md-4 portfolio-tile">
-					<a class="portfolio-link" data-toggle="modal" data-target="#portfolioModal1">
-						<figure>
-							<img src="assets/images/t-mobile-tuesdays-preview.jpg" />
-						</figure>
-					</a>
-				</div>
-				<div class="col-md-4 portfolio-tile">
-					<a>
-						<figure>
-							<img src="assets/images/cyt-preview.png" />
-						</figure>
-					</a>
-				</div>
-				<div class="col-md-4 portfolio-tile">
-					<a>
-						<figure>
-							<img src="assets/images/art-preview.png" />
-						</figure>
-					</a>
-				</div>
-				<div class="col-md-4 portfolio-tile">
-					<a>
-						<figure>
-							<img src="assets/images/drum-style-tile.png" />
-						</figure>
-					</a>
-				</div>
-				<div class="col-md-4 portfolio-tile">
-					<a>
-						<figure>
-							<img src="assets/images/gc-preview.png" />
-						</figure>
-					</a>
-				</div>
-				<div class="col-md-4 portfolio-tile">
-					<a>
-						<figure>
-							<img src="assets/images/scanner-1.png" />
-						</figure>
-					</a>
-				</div>
-				
-		
-		-->
+
 			<div class="container-fluid">
 			<div class="row footer">
 				<div class="col-md-12 text-center">
@@ -259,7 +258,6 @@
 		    
 			$(document).ready(function(){
 			  $('.portfolio').slick({
-				  
 			  });
 			});
 		    
