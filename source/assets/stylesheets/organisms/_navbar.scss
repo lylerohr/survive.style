@@ -19,6 +19,7 @@ nav #logo {
 
 nav.open #logo {
 	background-image: url(../images/ssxd-logo-dark.png);
+	transition-property: url;
 }
 
 nav #nav-toggle {

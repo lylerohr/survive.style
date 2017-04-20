@@ -1,7 +1,7 @@
 // _variables.scss
 
 $scale:								16px;
-$transition:						0.15s;
+$transition:						all 270ms cubic-bezier(0.77, 0, 0.175, 1),color 270ms cubic-bezier(0.77, 0, 0.175, 1);;
 
 /** Typography **/
 
@@ -77,7 +77,7 @@ $brand-danger:         				#d9534f;
 $body-bg:							$color-brand-auxiliary-1;
 $text-color:						$color-brand-secondary;
 $link-color:						$color-cta;
-$link-hover-color:					darken($link-color, 10%);
+$link-hover-color:					$color-white;
 $link-hover-decoration:				none;
 
 $component-active-color:    		#fff;
