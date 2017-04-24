@@ -5881,6 +5881,21 @@ button.close {
   margin: 0 auto;
   display: block; }
 
+.cover-panel {
+  min-height: 100vh;
+  position: relative; }
+
+.viewport-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.viewport-center-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .fluid-image {
   width: 100%; }
 
@@ -5914,6 +5929,13 @@ body {
 .container-fluid {
   background-color: #0E1218; }
 
+::selection, ::-moz-selection {
+  background: #cd453d;
+  color: #ffffff; }
+
+.content {
+  padding-bottom: 2rem; }
+
 a {
   color: #cd453d;
   transition: all 270ms cubic-bezier(0.77, 0, 0.175, 1), color 270ms cubic-bezier(0.77, 0, 0.175, 1); }
@@ -5935,7 +5957,8 @@ a.text-link:active,
 a.text-link:focus {
   color: #ffffff;
   text-decoration: none;
-  box-shadow: inset 0 -0.95rem 0 #cd453d; }
+  box-shadow: inset 0 -0.95rem 0 #cd453d;
+  cursor: pointer !important; }
 
 button,
 .btn {
@@ -5982,7 +6005,7 @@ button,
 .btn-primary:active:focus {
   background-color: #ab332c;
   border-color: #ab332c;
-  color: #dad7c2; }
+  color: #ffffff; }
 
 .btn-secondary,
 .btn-info {
@@ -6000,7 +6023,7 @@ button,
 .btn-info:focus {
   background-color: #ab332c;
   border-color: #ab332c;
-  color: #000000; }
+  color: #ffffff; }
 
 .btn-tertiary {
   background-color: transparent;
@@ -6189,6 +6212,9 @@ p {
   padding-left: 2rem;
   padding-right: 2rem; }
 
+.nav {
+  position: fixed; }
+
 .font-characters {
   width: 400px;
   margin-bottom: 0 !important; }
@@ -6366,11 +6392,22 @@ nav .nav-background ul li a:hover {
   background-color: #0e1218;
   color: #cd453d; }
 
+.portfolio-slide {
+  min-height: 650px !important;
+  height: 75vh; }
+
 .portfolio-slide-info-panel {
   background-color: #1B1F24;
-  min-height: 75vh;
   border-right: .5rem solid #35383C;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  min-height: 650px !important;
+  height: 75vh; }
+
+@media screen and (max-width: 768px) {
+  .portfolio-slide,
+  .portfolio-slide-info-panel {
+    min-height: auto;
+    height: auto; } }
 
 .project-information {
   position: absolute;
@@ -6381,7 +6418,8 @@ nav .nav-background ul li a:hover {
 
 .portfolio-slide-image-panel {
   background-color: rgba(53, 56, 60, 0.15);
-  min-height: 75vh; }
+  min-height: 650px !important;
+  height: 75vh; }
 
 .project-slide-image {
   position: absolute;
@@ -6586,8 +6624,14 @@ body {
 .container-fluid {
   background-color: #0E1218; }
 
+::selection, ::-moz-selection {
+  background: #cd453d;
+  color: #ffffff; }
+
+.content {
+  padding-bottom: 2rem; }
+
 .masthead {
-  min-height: 100vh;
   background-image: url(../images/ssxd-plane.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -6634,7 +6678,6 @@ body {
   background-attachment: fixed;
   background-position: center top;
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -6660,7 +6703,6 @@ body {
     font-weight: 300; } }
 
 .connect {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -6686,7 +6728,6 @@ body {
     font-size: 2.4rem; } }
 
 .resume {
-  height: 100vh;
   background-image: url(../images/resume.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -6717,8 +6758,9 @@ body {
   font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 .specialties-tiles {
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  padding-top: 4rem;
+  clear: both; }
 
 .specialty-tile {
   height: 18rem;
@@ -6734,6 +6776,8 @@ body {
   margin-top: 2rem; }
 
 @media screen and (max-width: 768px) {
+  .specialties-tiles {
+    padding-top: 0rem; }
   .specialty-tile {
     margin-top: 4rem; } }
 

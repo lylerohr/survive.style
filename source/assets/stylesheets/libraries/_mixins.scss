@@ -1,7 +1,30 @@
-@mixin vertical-center($width) {
+//LAYOUT
+
+// ELEMENT CENTERING
+@mixin viewport-center($width) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: $width;
+}
+
+@mixin viewport-center-vertical() {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@mixin vertical-center-absolute($width) {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: $width;
 }
+
+@mixin cover-panel() {
+	min-height: 100vh;
+	position: relative;
+}
+
+

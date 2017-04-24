@@ -1,25 +1,36 @@
 .portfolio-slide {
-	
+	min-height: 650px !important;
+	height: 75vh;
 }
 
 .portfolio-slide-info-panel {
 	background-color: #1B1F24;
-	min-height: 75vh;
 	border-right: .5rem solid #35383C;
 	padding-top: $padding-large;
+	min-height: 650px !important;
+	height: 75vh;
+}
+
+@media screen and (max-width: 768px) {
+	.portfolio-slide,
+	.portfolio-slide-info-panel {
+		min-height: auto;
+		height: auto;
+	}
 }
 
 .project-information {
-	@include vertical-center(66%);
+	@include vertical-center-absolute(66%);
 }
 
 .portfolio-slide-image-panel {
 	background-color: rgba(53,56,60, .15);
-	min-height: 75vh;
+	min-height: 650px !important;
+	height: 75vh;
 }
 
 .project-slide-image {
-	@include vertical-center(75%);
+	@include vertical-center-absolute(75%);
 }
 
 .project-meta-field {

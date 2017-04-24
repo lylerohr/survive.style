@@ -1,5 +1,4 @@
 .masthead {
-	min-height: 100vh;
 	background-image: url(../images/ssxd-plane.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -55,7 +54,6 @@
 	background-attachment: fixed;
 	background-position: center top;
 	position: relative;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -88,7 +86,6 @@
 }
 
 .connect {
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -122,7 +119,6 @@
 }
 
 .resume {
-	height: 100vh;
 	background-image: url(../images/resume.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -147,6 +143,9 @@
 	margin-bottom: 6rem;
 }
 
+.specialties-content {
+}
+
 .specialties h3 {
 	margin: 0;
 }
@@ -160,8 +159,9 @@
 }
 
 .specialties-tiles {
-	margin-top: 2rem;
 	margin-bottom: 2rem;
+	padding-top: 4rem;
+	clear: both;
 }
 
 .specialty-tile {
@@ -181,9 +181,20 @@
 }
 
 @media screen and (max-width: 768px) {
+	
+	.specialties-tiles {
+		padding-top: 0rem;
+	}
+	
 	.specialty-tile {
 		margin-top: 4rem;
 	}
+}
+
+#clients {
+}
+
+#clients .clients-content {
 }
 
 #clients p {

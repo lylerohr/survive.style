@@ -80,6 +80,18 @@ body.clip {
 	display: block;
 }
 
+.cover-panel {
+	@include cover-panel();
+}
+
+.viewport-center {
+	@include viewport-center(100%);
+}
+
+.viewport-center-vertical {
+	@include viewport-center-vertical();
+}
+
 //Images
 .fluid-image {
 	width: 100%;

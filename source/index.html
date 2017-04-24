@@ -42,8 +42,9 @@
 		<!-- End of Async Drift Code -->
 	</head>
 	<body id="body" onscroll="navBackground()">
+		
 		<div class="container-fluid">
-			<div class="row masthead">
+			<div class="row masthead cover-panel">
 				<nav id="nav">
 					<div id="bar" class="bar">
 						<a id="logo" href="/"></a>
@@ -57,15 +58,18 @@
 						</ul>
 					</div>
 				</nav>
-				<div class="masthead-content text-center">
-					<h1>Our experiences connect us.</h1>
-					<h1><small>I’m Lyle, and I am an Experience Designer.</small></h1>
-					<a class="masthead-down-arrow" href="#opportunity"><span class="icon-arrow-down"></span></a>
+				<div class="viewport-center">
+					<div class="masthead-content text-center">
+						<h1>Our experiences connect us.</h1>
+						<h1><small>I’m Lyle, and I am an Experience Designer.</small></h1>
+						<a class="masthead-down-arrow" href="#opportunity"><span class="icon-arrow-down"></span></a>
+					</div>
 				</div>
 			</div>
 		</div>
+		
 		<div class="container-fluid">
-			<div id="opportunity" class="row opportunity">
+			<div id="opportunity" class="row opportunity cover-panel">
 				<div class="opportunity-content">
 					<div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-1">
 						<h2 class="text-right">Every connection is a new opportunity.</h2>
@@ -75,8 +79,8 @@
 			</div>
 		</div>
 		<div class="container-fluid">
-			<div class="row connect">
-				<div class="col-md-12">
+			<div class="connect cover-panel viewport-center">
+				<div class="content">
 					<h2 class="text-center">I can help you connect with your users.</h2>
 					<p class="text-center">Focus on who’s important, and nothing else. </p>
 					<div class="text-center">
@@ -86,62 +90,67 @@
 			</div>
 		</div>
 		<div class="container-fluid">
-			<div id="resume" class="row resume">
-				<div class="col-md-6 col-md-offset-2">
+			<div id="resume" class="row resume cover-panel viewport-center-vertical">
+				<div class="col-md-6 col-md-offset-2 content">
 					<h2>Helping you communicate is my passion.</h2>
 					<p>My name is Lyle Rohr, and I am an Experience Designer.</p>
-					<p>Over the past 11 years, I have honed my skills through experience in advertising agencies and a startup here and there, mainly focusing on communication strategy and user experience design. I've worked with some of the brightest minds to bring experiences to life for some of the biggest brands.</p>
+					<p>Over the past 12 years, I have honed my skills through experience in advertising agencies and a startup here and there, mainly focusing on communication strategy and user experience design. I've worked with some of the brightest minds to bring experiences to life for some of the biggest brands.</p>
+					<p>Here are a couple of ways to get to know me, but the best is to <a class="text-link" onclick="openContact()">get in touch.</a></p>
 					<a class="btn btn-primary" href="/resume.html">My Resume</a> <a class="btn btn-primary" href="#portfolio">My Portfolio</a>
 				</div>
 			</div>
 		</div>
 		<div class="container">
-			<div class="specialties" id="specialties">
-				<div class="col-sm-12">
-					<h3>These are my specialties.</h3>
-					<p>My expertise spans the gap between concept and execution.  I thrive as a big thinker, but my sleeves are already rolled up so we can get down to business.</p>
-				</div>
-				<div class="row specialties-tiles">
-				<div class="col-md-4 col-sm-6 specialty-tile">
-					<span class="fa fa-user-circle-o text-center"></span>
-					<h4 class="text-center">Experience Design</h4>
-					<p>All we create is designed to be used by a person, your grandmother, a potential customer, your clients. Creating experiences is more than happenstance when designed with someone in mind. It's not just a mobile app, it's a real part of their life.</p>
-				</div>
-				<div class="col-md-4 col-sm-6 specialty-tile">
-					<span class="fa fa-lightbulb-o text-center"></span>
-					<h4 class="text-center">Concept Creation</h4>
-					<p>Whether you need a 30 day promotion, or an enterprise-level intranet, it all starts with a need. Ideas are never born fully formed. The best ideas are honed by a group of like-minded individuals over time. I help bring ideas to the table aimed at achieving your goals.</p>
-				</div>
-				<div class="col-md-4 col-sm-6 specialty-tile">
-					<span class="fa fa-cube text-center"></span>
-					<h4 class="text-center">Visualizing Ideas</h4>
-					<p>Ushering a concept into reality often takes some explanation, some convincing, and a way to help visualize what it could be. Taking a concept from idea to reality is one of my specialties.</p>
-				</div>
-				<div class="col-md-4 col-sm-6 specialty-tile">
-					<span class="fa fa-object-ungroup text-center"></span>
-					<h4 class="text-center">Flows, Wireframes, and Prototypes</h4>
-					<p>From tiny projects to massive ones, sketches, user flows, wireframes, and prototypes provide a more precise view of what your experience should be, and maybe more importantly, what it shouldn't be.</p>
-				</div>
-				<div class="col-md-4 col-sm-6 specialty-tile">
-					<span class="fa fa-pencil text-center"></span>
-					<h4 class="text-center">User Interface Design (UI)</h4>
-					<p>Wireframes are the bones of an experience, but user interface design is what makes it really come to life. Colors and shapes fill our eyes with emotion which help our users connect with your brand.</p>
-				</div>
-				<div class="col-md-4 col-sm-6 specialty-tile">
-					<span class="fa fa-code text-center"></span>
-					<h4 class="text-center">Front-End Engineering</h4>
-					<p>HTML, CSS3, and JavaScript are the language of the web these days. Not only can I develop your new app, having a firm grasp on how the online world works helps keep the ideation process grounded, budgets on track, and experiences as great as they can be.</p>
-				</div>
-				</div>
-				<div class="text-center">
-						<a class="btn btn-primary btn-lg" href="mailto:lyle@survivestyle.com">Work with me.</a>
+			<div class="specialties cover-panel viewport-center" id="specialties">
+				<div class="specialties-content">
+					<div class="col-sm-12">
+						<h3>These are my specialties.</h3>
+						<p>My expertise spans the gap between concept and execution.  I thrive as a big thinker, but my sleeves are already rolled up so we can get down to business.</p>
+					</div>
+					<div class="row specialties-tiles">
+						<div class="col-md-4 col-sm-6 specialty-tile">
+							<span class="fa fa-user-circle-o text-center"></span>
+							<h4 class="text-center">Experience Design</h4>
+							<p>All we create is designed to be used by a person, your grandmother, a potential customer, your clients. Creating experiences is more than happenstance when designed with someone in mind. It's not just a mobile app, it's a real part of their life.</p>
+						</div>
+						<div class="col-md-4 col-sm-6 specialty-tile">
+							<span class="fa fa-lightbulb-o text-center"></span>
+							<h4 class="text-center">Concept Creation</h4>
+							<p>Whether you need a 30 day promotion, or an enterprise-level intranet, it all starts with a need. Ideas are never born fully formed. The best ideas are honed by a group of like-minded individuals over time. I help bring ideas to the table aimed at achieving your goals.</p>
+						</div>
+						<div class="col-md-4 col-sm-6 specialty-tile">
+							<span class="fa fa-cube text-center"></span>
+							<h4 class="text-center">Visualizing Ideas</h4>
+							<p>Ushering a concept into reality often takes some explanation, some convincing, and a way to help visualize what it could be. Taking a concept from idea to reality is one of my specialties.</p>
+						</div>
+						<div class="col-md-4 col-sm-6 specialty-tile">
+							<span class="fa fa-object-ungroup text-center"></span>
+							<h4 class="text-center">Flows, Wireframes, and Prototypes</h4>
+							<p>From tiny projects to massive ones, sketches, user flows, wireframes, and prototypes provide a more precise view of what your experience should be, and maybe more importantly, what it shouldn't be.</p>
+						</div>
+						<div class="col-md-4 col-sm-6 specialty-tile">
+							<span class="fa fa-pencil text-center"></span>
+							<h4 class="text-center">User Interface Design (UI)</h4>
+							<p>Wireframes are the bones of an experience, but user interface design is what makes it really come to life. Colors and shapes fill our eyes with emotion which help our users connect with your brand.</p>
+						</div>
+						<div class="col-md-4 col-sm-6 specialty-tile">
+							<span class="fa fa-code text-center"></span>
+							<h4 class="text-center">Front-End Engineering</h4>
+							<p>HTML, CSS3, and JavaScript are the language of the web these days. Not only can I develop your new app, having a firm grasp on how the online world works helps keep the ideation process grounded, budgets on track, and experiences as great as they can be.</p>
+						</div>
+					</div>
+					<div class="text-center">
+							<button class="btn btn-primary btn-lg" onclick="openContact()">Work with me.</button>
+					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div id="clients" class="container text-center">
-			<p>Here are some of the clients I've been lucky enough to work with.</p>
-			<img class="client-logos" src="assets/images/clients.png" />
+		<div id="clients" class="container text-center cover-panel viewport-center">
+			<div class="clients-content">
+				<p>Here are some of the clients I've been lucky enough to work with.</p>
+				<img class="client-logos" src="assets/images/clients.png" />
+			</div>
 		</div>
 		
 		<div id="portfolio" class="container">
@@ -198,6 +207,28 @@
 				
 				<div class="portfolio-slide">
 					<div class="col-lg-6 col-md-6 portfolio-slide-info-panel">
+						<img class="project-slide-image hidden-lg hidden-md" src="assets/images/ufpi-preview.png" />
+						<h4 class="project-meta-field text-center">UI/UX Design</h4>
+						<h5 class="project-meta-title text-center">Universal Forest Products</h5>
+						<div class="project-information">
+							<h4 class="project-meta-overview">Overview</h4>
+							<p>Universal Forest Products, Inc. was looking to reinvent their online image with a forward-thinking design that would translate gracefully from smaller to larger screens.</p>
+							<p>My goal with UFP was to create a real personality that users could sense while still keeping a professional, corporate feel. Utilizing UFP's existing branding and incorporating modern design principles, we were able to achieve a sleek look and feel which handles large and small screens gracefully.</p>
+							<div class="project-additional-information">
+								<p class="project-meta-client"><span class="text-bold">Client:</span> Universal Forest Products, Inc.</p>
+								<p class="project-meta-agency"><span class="text-bold">Agency:</span> SSXD, Inc.</p>
+								<p class="project-meta-service"><span class="text-bold">Service:</span> User Interface Design, User Experience Design</p>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 portfolio-slide-image-panel text-center hidden-sm hidden-xs">
+						<img class="project-slide-image" src="assets/images/ufpi-preview.png" />
+					</div>
+				</div>
+				
+				<div class="portfolio-slide">
+					<div class="col-lg-6 col-md-6 portfolio-slide-info-panel">
 						<img class="project-slide-image hidden-lg hidden-md" src="assets/images/art-preview.png" />
 						<h4 class="project-meta-field text-center">Digital Strategy, UX Design</h4>
 						<h5 class="project-meta-title text-center">Arteasan Teas</h5>
@@ -217,6 +248,8 @@
 						<img class="project-slide-image" src="assets/images/art-preview.png" />
 					</div>
 				</div>
+				
+				
 				<!--
 				<div class="portfolio-slide">
 					<div class="col-lg-6 portfolio-slide-info-panel">
@@ -293,6 +326,16 @@
 				  }
 			  }
 			});
+			
+			function openContact() {
+				drift.on('ready',function(api, payload) {
+				 	api.goToNewConversation();
+				 	api.showWelcomeMessage({
+				 		message:"Hi there! What can I help you with?"
+					})
+				})
+			};
+
 		    
 		    			
 		    

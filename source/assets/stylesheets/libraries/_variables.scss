@@ -83,6 +83,8 @@ $link-hover-decoration:				none;
 $component-active-color:    		#fff;
 $component-active-bg:       		$brand-primary;
 
+$text-selection-color:				$color-white;
+$text-selection-background:			$color-brand-primary;
 
 $border-radius-base:        		.188rem;
 $border-radius-large:       		$border-radius-base * 2;
@@ -105,14 +107,14 @@ $btn-padding-extra-small:			.125rem .25rem;
 $btn-primary-color:              	$color-brand-primary;
 $btn-primary-bg:                 	$color-cta;
 $btn-primary-border:             	$color-cta;
-$btn-primary-color-hover:	     	$color-brand-tertiary;
+$btn-primary-color-hover:	     	$color-white;
 $btn-primary-bg-hover:				$color-cta-hover;
 $btn-primary-border-hover:			$color-cta-hover;
 
 $btn-secondary-color:              	$color-cta;
 $btn-secondary-bg:                 	$btn-bg-ghost;
 $btn-secondary-border:             	$color-cta;
-$btn-secondary-color-hover:	     	$color-black;
+$btn-secondary-color-hover:	     	$color-white;
 $btn-secondary-bg-hover:			$color-cta-hover;
 $btn-secondary-border-hover:		$color-cta-hover;
 

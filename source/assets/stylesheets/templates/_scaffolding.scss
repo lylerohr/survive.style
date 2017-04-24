@@ -19,3 +19,12 @@ body {
 .container-fluid {
 	background-color: #0E1218;
 }
+
+::selection, ::-moz-selection {
+	background: $text-selection-background;
+	color: $text-selection-color;
+}
+
+.content {
+	padding-bottom: $padding-base;
+}
